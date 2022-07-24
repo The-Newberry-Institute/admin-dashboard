@@ -15,21 +15,3 @@ $(this).css({
 });                  
 });
 
-
-
-$('.read-reviews-btn').click(function() {
-$('.read-reviews').slideDown();
-});
-
-
-$('.close-reviews').click(function() {
-$('.read-reviews').slideUp();
-});
-
-$('.mobile-menu ').click(function() {
-$('#sidebar').slideToggle();
-});
-
-$('.search-form .fa-search').click(function() {
-$('.search-form .form-control').slideToggle();
-});

@@ -36,50 +36,37 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
+   
+   
   </head>
-  <body>
+  <body  >
+   
     <header>
-      <nav class="navbar navbar-expand-lg bg-warning custom-nav">
+      <nav class="navbar navbar-expand-lg bg-warning navbar-fixed">
         <i class="fa fa-bars mobile-menu"></i>
         <li class="nav-item">
-          <a class="nav-bar brand" href="#">
+          <a class="nav-bar brand" href="./index.html">
             <img src="/img/logo-berrys.png" alt="" />
           </a>
         </li>
-        <!-- <form class="form-inline search-form">
-          <i class="fa fa-search"></i>
-          <input class="form-control" type="search" placeholder="Search..." />
-        </form> -->
+        
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="drop">
-            <a class="nav-link bell-icon-badge" href="#">
-              <i class="fa-solid fa-user-pen" aria-hidden="true"></i>
-              <!-- <span class="bell-badge">10</span> -->
-            </a>
+        
 
+          <li class="nav-item drop">
+            <a class="nav-link user-prfile" href="./profile.html">
+              <img src="./img/profile.jpg" alt="profile" />
+            </a>
             <ul class="drop-menu">
-                <li><a href="./add-staff.html">add staff</a></li>
-              <li><a href="./add-board-member.html">add board member</a></li>
-                <li><a href="./add-event.html">add event</a></li>
-              <li><a href="">Logout</a></li>
+              <li><a href="./profile.html">View profile</a></li>
+           
+            <li><a href="./signup.html">Logout</a></li>
 
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link user-prfile" href="#">
-              <img src="./img/profile.jpg" alt="" />
-            </a>
+          </ul>
           </li>
         </ul>
       </nav>
     </header>
-
     <div class="container-fluid">
       <div class="row">
         <aside class="col-md-2" id="sidebar">
@@ -90,27 +77,32 @@
               >
             </li>
             <li>
-              <a href="./board.html">
+              <a href="#board" class="active">
                 <i class="fa-solid fa-users" aria-hidden="true"></i>Board</a>
             </li>
             <li>
-              <a href="/staff.html">
+              <a href="#board">
                 <i class="fa fa-people-group" aria-hidden="true"></i>Staff</a
               >
             </li>
             <li>
-              <a href=""> <i class="fa-brands fa-blogger" aria-hidden="true"></i>Blogs</a>
+              <a href="blogs.html"> <i class="fa-brands fa-blogger" aria-hidden="true"></i>Blogs</a>
             </li>
-            <li>
-              <a href="">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>Bar Chart</a
-              >
-            </li>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="drop">
+                <a class="nav-link bell-icon-badge" href="./add-staff.html">
+                  <i class="fa-solid fa-user-pen" aria-hidden="true">add persons</i>
+            
+                </a>
+    
+           
+              </li>
           </ul>
         </aside>
-
+        
+       
         <main class="col-md-10" id="main">
-          <section class="spacethis">
+          <section class="spacethis ">
            <strong>  <h3 class="title">Overview</h3></strong>
             <div class="row mobile-scrollable">
               <div class="col-md-3">
@@ -118,7 +110,7 @@
                   <i class="fa-solid fa-people-group"></i><br>
                  <strong>Available staff</strong> 
                   <h1 class="text-success">100</h1>
-                  <a class="btn btn-theme" href="./staff.html" role="button">learn More</a>
+                  <a class="btn btn-theme" href="#staff" role="button">learn More</a>
                 </div>
               </div>
               <div class="col-md-3">
@@ -126,18 +118,18 @@
                   <i class="fa-solid fa-users"></i><br>
                  <strong >Board Members</strong>
                   <h1 class="text-danger">20</h1>
-                  <a class="btn btn-theme" href="./board.html" role="button">learn More</a>
+                  <a class="btn btn-theme" href="#board" role="button">learn More</a>
                 </div>
               </div>
 
-              <!-- <div class="col-md-3">
+              <div class="col-md-3">
                 <div class="dash-card">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <p>Ongoing Events</p>
-                  <h1 class="text-warning">500</h1>
-                  <button type="button" class="btn btn-theme">Know More</button>
+                  <i class="fa-solid fa-user" aria-hidden="true"></i><br>
+                <strong>  Admins</strong>
+                  <h1 class="text-warning">5</h1>
+                  <a class="btn btn-theme" href="./board.html" role="button">View ADMINS</a>
                 </div>
-              </div> -->
+              </div>
             </div>
           </section>
 
@@ -303,22 +295,345 @@
               </div>
             </div>
           </section>
-
-          
         </main>
       </div>
     </div>
+<!-- board -->
+<section class="spacethis container">
+           
+  <div class="col-md-12 mb-19">
+    <strong><h5 class="title">Board</h5></strong>
+    <div class="md-card">
+      <table class="table table-hover no-border">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Position</th>
+            <th scope="col">Status</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img class="table-user" src="./img/profile.jpg" alt="" />
+              Pearl Chavez
+            </td>
+            <td>member</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              > active
+                
+                <i class="fa fa-check-circle"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >
+                <i class="fa fa-phone"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >
+                <i class="fa fa-edit"></i>
+              </button>
+            </td>
+          </tr>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <img class="table-user" src="./img/profile.jpg" alt="" />
+              Pearl Chavez
+            </td>
+            <td>patron</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              > active
+                <i class="fa fa-check-circle"></i>
+              </button>
+              
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >
+                <i class="fa fa-phone"></i>
+              </button>
+            </td><td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >
+                <i class="fa fa-edit"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="table-user" src="./img/profile.jpg" alt="" />
+              Pearl Chavez
+            </td>
+            <td>chairperson</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >active <i class="fa fa-check-circle"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >
+                <i class="fa fa-phone"></i>
+              </button>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-danger"
+                >
+                  <i class="fa fa-edit"></i>
+                </button>
+          
+          </tr>
+          <tr>
+            <td>
+              <img class="table-user" src="./img/profile.jpg" alt="" />
+              Pearl Chavez
+            </td>
+            <td>secretary</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              > active
+                <i class="fa fa-check-circle"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >
+                <i class="fa fa-phone"></i>
+              </button>
+<td>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+              >
+                <i class="fa fa-edit"></i>
+              </button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</section>
+<!-- staff -->
+<section class="spacethis container">
+  <div class="col-md-12 mb-19">
+    <strong><h5 class="title">Staff</h5></strong>
+    <div class="md-card">
+      <table class="table table-hover no-border">
+          <thead>
+            <tbody>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Position</th>
+              <th scope="col">Status</th>
+              <th scope="col">Contact</th>
+              <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tr>
+                  <td>
+                    <img class="table-user" src="./img/profile.jpg" alt="" />
+                    Pearl Chavez
+                  </td>
+                  <td>member</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-danger"
+                    > active
+                      <i class="fa fa-check-circle"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-danger"
+                    >
+                      <i class="fa fa-phone"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-danger"
+                    >
+                      <i class="fa fa-edit"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img class="table-user" src="./img/profile.jpg" alt="" />
+                    Pearl Chavez
+                  </td>
+                  <td>patron</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-danger"
+                    > active
+                      <i class="fa fa-check-circle"></i>
+                    </button>
+                    
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-danger"
+                    >
+                      <i class="fa fa-phone"></i>
+                    </button>
+                  </td><td>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-danger"
+                    >
+                      <i class="fa fa-edit"></i>
+                    </button>
+                  </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- staff -->
+
+
+        
+    
+  
 
 
 
+              
+              
+              
+              
+              
+              
+              
+              
+              <!-- footer_start  -->
+    <!-- <footer class="footer spacethis">
+      <div class="footer_top">
+     
+              <div class="row">
+                  <div class="col-xl-4 col-md-6 col-lg-4 ">
+                      <div class="footer_widget">
+                          <div class="footer_logo">
+                              <a href="#">
+                                  <img src="img/png.png"  alt=""
+                                  style="object-fit: contain; width: 100%;">
+                              </a>
+                          </div>
+                          <p class="address_text">The Newberry Institute, <br> premiere Democracy Center ,<br>located in middle Georgia.
+                          </p>
+                          <div class="socail_links">
+                              <ul>
+                                  <li>
+                                      <a href="https://web.facebook.com/thenewberryfoundation" target="_blank">
+                                          <i class="fa fa-facebook"></i>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/NewberryInst" target="_blank">
+                                          <i class="fa fa-twitter"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.instagram.com/thenewberryfoundation/" target="_blank">
+                                          <i class="fa fa-instagram"></i>
+                                      </a>
 
+                              </ul>
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-lg-2">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Services
+                          </h3>
+                          <ul class="links">
+                              <li><a href="#">Donate</a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-md-6 col-lg-3">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Contacts
+                          </h3>
+                          <div class="contacts">
+                              <p>
+                                  info@thenewberryfoundation.org <br>
+                                  87 commerce street, 
+                                  Hawkinsville, GA 31036.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="copy-right_text">
+          <div class="container spacethis">
+              <div class="row">
+                  <div class="bordered_1px "></div>
+                  <div class="col-xl-12">
+                      <p class="copy_right text-center">
+                          <p>< Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Newberry Institute <i class="ti-heart" aria-hidden="true"></i><a href="index" target="_blank"></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0></p>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer> -->
+  <!-- footer_end  -->
     
 
-    <script src="./sandbox.js"></script>
+    
+  </body>
+  <script src="./sandbox.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controller.js"></script>
     <script
 src="https://www.gstatic.com/charts/loader.js">
 </script>
-  </body>
 </html>
